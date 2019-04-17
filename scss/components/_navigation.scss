@@ -8,12 +8,11 @@
   align-items: center;
   margin-bottom: 5em;
   @media (min-width: 'md'){
-
+    flex-direction: row;
   }
 }
 
 .nav__item {
-  width: 98%;
   list-style-type: none;
   text-align: center;
   border-radius: 3px;

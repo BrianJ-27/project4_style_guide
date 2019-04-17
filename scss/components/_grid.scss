@@ -76,42 +76,36 @@
 .grid__col--3.theme__colors{
   @extend %btn;
   background-color: $bg-grid-col-3;
-  width: 100%;
 }
 
 .grid__col--4.theme__colors{
   @extend %btn;
   background-color: $bg-grid-col-4;
-  width: 100%;
 }
 
 .grid__col--5.theme__colors{
   @extend %btn;
   background-color: $bg-grid-col-5;
-  width: 100%;
 }
 
 .grid__col--6.theme__colors{
   @extend %btn;
   background-color: $bg-grid-col-6;
-  width: 100%;
+
 }
 
 .grid__col--7.theme__colors{
   @extend %btn;
   background-color: $bg-grid-col-7;
-  width: 100%;
 }
 
 .grid__col--8.theme__colors{
   @extend %btn;
   background-color: $bg-grid-col-8;
-  width: 100%;
 }
 
 .grid__col--12.theme__colors{
   @extend %btn;
-  width: 100%;
   background-color: $bg-grid-col-12;
 }
 
