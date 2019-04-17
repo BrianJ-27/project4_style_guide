@@ -1,0 +1,41 @@
+// **************************************
+// GLOBAL VARIABLES
+// **************************************
+
+//Base Colors
+    $white: #fff;
+    $black: #000;
+    $main-site-color: #00DBB6;
+
+//Button Colors
+    $color-link-button-default: #69F6FF;
+    $button-success: #09E827;
+    $button-error: #D13219;
+    $button-warning: #FF760D;
+    $button-info: #693D80;
+
+//Grid Colors
+    $bg-grid-col-12: #5CFFCB;
+    $bg-grid-col-6: #3887B2;
+    $bg-grid-col-4: #7BEDFF;
+    $bg-grid-col-3: #E893FF;
+    $bg-grid-col-5: #07D874;
+    $bg-grid-col-7: #DB7D6A;
+    $bg-grid-col-8: #FF9969;
+
+//layout
+    $max-width: 1200px;
+
+//Font Stacks
+    $font-primary: 'Verdana', sans-serif ;
+    $font-secondary: 'Helvetica' sans-serif;
+    $base-font-size: 16px;
+    $font-color: #8c8c8c;
+
+// Breakpoints
+    $breakpoints: (
+    'xs': 575px,
+    'sm': 576px,
+    'md': 768px,
+    'lg': 992px,
+    );

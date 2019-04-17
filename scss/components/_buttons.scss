@@ -1,0 +1,36 @@
+// **************************************
+//BUTTONS
+// **************************************
+
+.btn--default{
+  @extend %btn;
+  @extend %btn-properties;
+  background-color: $color-link-button-default;
+}
+.btn--success{
+  @extend %btn;
+  @extend %btn-properties;
+  background-color: $button-success;
+}
+.btn--error{
+  @extend %btn;
+  @extend %btn-properties;
+  background-color: $button-error;
+
+}
+.btn--warning{
+  @extend %btn;
+  @extend %btn-properties;
+  background-color: $button-warning;
+}
+.btn--info{
+  @extend %btn;
+  @extend %btn-properties;
+  background-color: $button-info;
+}
+
+.theme__colors{
+  padding-left: 1em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+}

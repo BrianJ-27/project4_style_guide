@@ -1,0 +1,27 @@
+/*------GLOBAL RESET/BASE STYLES--------*/
+//normalize stylesheet
+@import 'css/normalize.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+div,
+h1,
+h4,
+nav,
+ul,
+li,
+p,
+form,
+label{
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h4,
+p{
+  color: $font-color;
+}

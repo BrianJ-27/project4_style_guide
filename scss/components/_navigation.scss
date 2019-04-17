@@ -1,0 +1,34 @@
+// **************************************
+//NAVIGATION
+// **************************************
+
+.nav{
+  @include flex_me(column);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5em;
+  @media (min-width: 'md'){
+
+  }
+}
+
+.nav__item {
+  width: 98%;
+  list-style-type: none;
+  text-align: center;
+  border-radius: 3px;
+  padding: .5em;
+}
+
+.nav__item:hover{
+  background-color: $main-site-color;
+}
+
+.nav__item a{
+  text-decoration: none;
+  color: #000;
+}
+
+.nav__item a:hover{
+  color: #fff;
+}

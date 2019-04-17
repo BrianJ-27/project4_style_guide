@@ -1,0 +1,18 @@
+// **************************************
+//FORMS
+// **************************************
+
+.form{
+  @include flex_me(column);
+}
+.form__label--hidden{
+  margin-bottom: .5em;
+  margin-left: 1em;
+  border-bottom: 4px solid $main-site-color;
+}
+
+.form__input{
+  margin-bottom: 1em;
+  background-color: #f2f2f5;
+  border-radius: 5px;
+}

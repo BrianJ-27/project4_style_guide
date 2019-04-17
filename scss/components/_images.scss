@@ -1,0 +1,20 @@
+// **************************************
+//IMAGES
+// **************************************
+
+.img--logo{
+  @extend %img;
+  padding-bottom: 2.5em;
+}
+
+.img--frame{
+  @extend %img;
+  border: 7px inset #fff;
+  margin-bottom: 2.5em;
+
+}
+
+.img--avatar{
+  @extend %img;
+  padding-bottom: 1em;
+}

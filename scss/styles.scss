@@ -1,0 +1,296 @@
+// **************************************
+// index.scss
+// Main Sass file used to import partials
+// **************************************
+
+
+// NOTE: import utilities and base partials here:
+
+// **************************************
+// GLOBAL VARIABLES
+// **************************************
+    $color-accent: #00DBB6;
+    $color-link-button-default: #69F6FF;
+    $button-success: #09E827;
+    $button-error: #D13219;
+    $button-warning: #FF760D;
+    $button-info: #693D80;
+    $bg-grid-col-12: #5CFFCB;
+    $bg-grid-col-6: #3887B2;
+    $bg-grid-col-4: #7BEDFF;
+    $bg-grid-col-3: #E893FF;
+    $bg-grid-col-5: #07D874;
+    $bg-grid-col-7: #DB7D6A;
+    $bg-grid-col-8: #FF9969;
+// **************************************
+// EXTENDS
+// **************************************
+  %btn {
+    padding: .5em;
+  }
+// **************************************
+// MIXINS
+// **************************************
+ @mixin centered {
+   text-align: center;
+ }
+// **************************************
+//FUNCTIONS
+// **************************************
+
+// import components partials
+
+
+// **************************************
+//TYPOGRAPHY
+// **************************************
+
+// **************************************
+//NAVIGATION
+// **************************************
+
+// **************************************
+//IMAGES
+// **************************************
+
+// **************************************
+//BUTTONS
+// **************************************
+
+// **************************************
+//FORMS
+// **************************************
+/*------GLOBAL RESET/BASE STYLES--------*/
+
+@import 'css/normalize.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+div,
+h1,
+h4,
+nav,
+ul,
+li,
+p,
+form,
+label{
+  margin: 0;
+  padding: 0;
+}
+
+
+/*-------GRID STYLES----*/
+
+.container{
+  max-width: 62.5em;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.grid__row{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.grid__col--2{
+  width: 100%;
+}
+
+.grid__col--3.theme__colors{
+  @extend %btn;
+  background-color: $bg-grid-col-3;
+  width: 100%;
+}
+
+.grid__col--4.theme__colors{
+  background-color: $bg-grid-col-4;
+  width: 100%;
+}
+
+.grid__col--5.theme__colors{
+  background-color: $bg-grid-col-5;
+  width: 100%;
+}
+
+.grid__col--6.theme__colors{
+  background-color: $bg-grid-col-6;
+  width: 100%;
+}
+
+.grid__col--7.theme__colors{
+  background-color: $bg-grid-col-7;
+  width: 100%;
+}
+
+.grid__col--8.theme__colors{
+  background-color: $bg-grid-col-8;
+  width: 100%;
+}
+
+.grid__col--9{
+  width: 100%;
+}
+
+.grid__col--10{
+  width: 100%;
+}
+
+.grid__col--11{
+  width: 100%;
+}
+
+.grid__col--12.theme__colors{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $bg-grid-col-12;
+}
+
+.centered{
+
+}
+
+.theme__colors{
+
+}
+
+.card{
+  margin-bottom: 7em;
+}
+
+/*-------TYPOGRAPHY STYLES----*/
+
+.container {
+  font-family: sans-serif;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+
+.link{
+  text-decoration: none;
+  color: $color-link-button-default;
+  font-size: 1.1em;
+}
+
+.blockquote{
+  border-left: 4px solid $color-accent;
+  padding-left: 1em;
+  font-size: 1.4em;
+  font-style: italic;
+}
+
+.headline--primary{
+  margin-bottom: 1em;
+  color: $color-accent;
+  line-height: 1.1em;
+}
+
+.headline--secondary{
+  margin: 4em 0;
+
+}
+
+/*-------IMAGE STYLES----*/
+
+.img--logo{
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 2.5em;
+}
+
+.img--frame{
+  display: block;
+  margin: 0 auto;
+  border: 7px solid #f2f2f2;
+  margin-bottom: 2.5em;
+
+}
+
+.img--avatar{
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+
+/*-------NAV STYLES----*/
+
+.nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5em;
+}
+
+.nav__item {
+  width: 98%;
+  list-style-type: none;
+  text-align: center;
+  border-radius: 3px;
+  padding: .5em;
+}
+
+.nav__item:hover{
+  background-color: $color-accent;
+}
+
+.nav__item a{
+  text-decoration: none;
+  color: #000;
+}
+
+.nav__item a:hover{
+  color: #fff;
+}
+
+/*-------BUTTON STYLES----*/
+
+.btn--default{
+  background-color: $color-link-button-default;
+  color: #fff;
+}
+.btn--success{
+  background-color: $button-success;
+  color: #fff;
+}
+.btn--error{
+  background-color: $button-error;
+  color: #fff;
+}
+.btn--warning{
+  background-color: $button-warning;
+  color: #fff;
+}
+.btn--info{
+  background-color: $button-info;
+  color: #fff;
+}
+
+.theme__colors{
+  padding-left: 1em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+}
+
+/*-------FORM STYLES----*/
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+.form__label--hidden{
+  margin-bottom: .5em;
+  margin-left: 1em;
+}
+
+.form__input{
+  margin-bottom: 1em;
+  border-top: 4px solid $color-accent;
+  background-color: #f2f2f5;
+  border-radius: 5px;
+}
