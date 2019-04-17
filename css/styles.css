@@ -1,6 +1,14 @@
 @import url(css/normalize.css);
-.grid__col--3.theme__colors {
+.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--12.theme__colors {
   padding: .5em; }
+
+.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+  text-transform: uppercase;
+  color: #fff; }
+
+.img--logo, .img--frame, .img--avatar {
+  display: block;
+  margin: 0 auto; }
 
 /*------GLOBAL RESET/BASE STYLES--------*/
 * {
@@ -19,19 +27,145 @@ label {
   margin: 0;
   padding: 0; }
 
-/*-------GRID STYLES----*/
+h1,
+h4,
+p {
+  color: #8c8c8c; }
+
+.btn--default {
+  background-color: #69F6FF; }
+
+.btn--success {
+  background-color: #09E827; }
+
+.btn--error {
+  background-color: #D13219; }
+
+.btn--warning {
+  background-color: #FF760D; }
+
+.btn--info {
+  background-color: #693D80; }
+
+.theme__colors {
+  padding-left: 1em;
+  margin-bottom: 1em;
+  border-radius: 5px; }
+
+.form {
+  display: flex;
+  flex-direction: column; }
+
+.form__label--hidden {
+  margin-bottom: .5em;
+  margin-left: 1em;
+  border-bottom: 4px solid #00DBB6; }
+
+.form__input {
+  margin-bottom: 1em;
+  background-color: #f2f2f5;
+  border-radius: 5px; }
+
 .container {
-  max-width: 62.5em;
+  max-width: 75em;
   margin: 0 auto;
   padding: 1em; }
 
 .grid__row {
+  padding: 1em 10px;
   display: flex;
-  flex-direction: column;
-  width: 100%; }
-
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .grid__row {
+      flex-direction: row; } }
+.grid__col--1 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--1 {
+      margin-top: 0;
+      flex-basis: 8.3333333333%; } }
 .grid__col--2 {
-  width: 100%; }
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--2 {
+      margin-top: 0;
+      flex-basis: 16.6666666667%; } }
+.grid__col--3 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--3 {
+      margin-top: 0;
+      flex-basis: 25%; } }
+.grid__col--4 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--4 {
+      margin-top: 0;
+      flex-basis: 33.3333333333%; } }
+.grid__col--5 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--5 {
+      margin-top: 0;
+      flex-basis: 41.6666666667%; } }
+.grid__col--6 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--6 {
+      margin-top: 0;
+      flex-basis: 50%; } }
+.grid__col--7 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--7 {
+      margin-top: 0;
+      flex-basis: 58.3333333333%; } }
+.grid__col--8 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--8 {
+      margin-top: 0;
+      flex-basis: 66.6666666667%; } }
+.grid__col--9 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--9 {
+      margin-top: 0;
+      flex-basis: 75%; } }
+.grid__col--10 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--10 {
+      margin-top: 0;
+      flex-basis: 83.3333333333%; } }
+.grid__col--11 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--11 {
+      margin-top: 0;
+      flex-basis: 91.6666666667%; } }
+.grid__col--12 {
+  margin-top: 10px;
+  flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--12 {
+      margin-top: 0;
+      flex-basis: 100%; } }
+
+@media (min-width: 768px) {
+  [class^=grid__col] + [class^=grid__col] {
+    margin-left: 10px; } }
 
 .grid__col--3.theme__colors {
   background-color: #E893FF;
@@ -57,67 +191,27 @@ label {
   background-color: #FF9969;
   width: 100%; }
 
-.grid__col--9 {
-  width: 100%; }
-
-.grid__col--10 {
-  width: 100%; }
-
-.grid__col--11 {
-  width: 100%; }
-
 .grid__col--12.theme__colors {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   background-color: #5CFFCB; }
+
+.grid__col--12 {
+  display: flex;
+  flex-direction: column; }
 
 .card {
   margin-bottom: 7em; }
 
-/*-------TYPOGRAPHY STYLES----*/
-.container {
-  font-family: sans-serif;
-  line-height: 1.5em;
-  font-size: 1em; }
-
-.link {
-  text-decoration: none;
-  color: #69F6FF;
-  font-size: 1.1em; }
-
-.blockquote {
-  border-left: 4px solid #00DBB6;
-  padding-left: 1em;
-  font-size: 1.4em;
-  font-style: italic; }
-
-.headline--primary {
-  margin-bottom: 1em;
-  color: #00DBB6;
-  line-height: 1.1em; }
-
-.headline--secondary {
-  margin: 4em 0; }
-
-/*-------IMAGE STYLES----*/
 .img--logo {
-  display: block;
-  margin: 0 auto;
   padding-bottom: 2.5em; }
 
 .img--frame {
-  display: block;
-  margin: 0 auto;
-  border: 7px solid #f2f2f2;
+  border: 7px inset #fff;
   margin-bottom: 2.5em; }
 
 .img--avatar {
-  display: block;
-  margin: 0 auto;
   padding-bottom: 1em; }
 
-/*-------NAV STYLES----*/
 .nav {
   display: flex;
   flex-direction: column;
@@ -142,45 +236,28 @@ label {
 .nav__item a:hover {
   color: #fff; }
 
-/*-------BUTTON STYLES----*/
-.btn--default {
-  background-color: #69F6FF;
-  color: #fff; }
+.container {
+  font-family: "Verdana", sans-serif;
+  line-height: 1.5em;
+  font-size: 1em; }
 
-.btn--success {
-  background-color: #09E827;
-  color: #fff; }
+.link {
+  text-decoration: none;
+  color: #69F6FF;
+  font-size: 1.1em; }
 
-.btn--error {
-  background-color: #D13219;
-  color: #fff; }
-
-.btn--warning {
-  background-color: #FF760D;
-  color: #fff; }
-
-.btn--info {
-  background-color: #693D80;
-  color: #fff; }
-
-.theme__colors {
+.blockquote {
+  border-left: 4px solid #00DBB6;
   padding-left: 1em;
+  font-size: 1.4em;
+  font-style: italic; }
+
+.headline--primary {
   margin-bottom: 1em;
-  border-radius: 5px; }
+  color: #00DBB6;
+  line-height: 1.1em; }
 
-/*-------FORM STYLES----*/
-.form {
-  display: flex;
-  flex-direction: column; }
-
-.form__label--hidden {
-  margin-bottom: .5em;
-  margin-left: 1em; }
-
-.form__input {
-  margin-bottom: 1em;
-  border-top: 4px solid #00DBB6;
-  background-color: #f2f2f5;
-  border-radius: 5px; }
+.headline--secondary {
+  margin: 4em 0; }
 
 /*# sourceMappingURL=styles.css.map */
