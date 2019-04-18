@@ -1,6 +1,8 @@
 // **************************************
 // MIXINS
 // **************************************
+
+//centering text on page
  @mixin centered {
    text-align: center;
  }
@@ -16,4 +18,5 @@
      flex-wrap: $wrap;
      justify-content: $just;
    }
+
 // Media Query

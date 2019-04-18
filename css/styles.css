@@ -342,18 +342,33 @@ template {
 
 .btn--default {
   background-color: #69F6FF; }
+  @media (min-width: 768px) {
+    .btn--default {
+      width: 15%; } }
 
 .btn--success {
   background-color: #09E827; }
+  @media (min-width: 768px) {
+    .btn--success {
+      width: 15%; } }
 
 .btn--error {
   background-color: #D13219; }
+  @media (min-width: 768px) {
+    .btn--error {
+      width: 15%; } }
 
 .btn--warning {
   background-color: #FF760D; }
+  @media (min-width: 768px) {
+    .btn--warning {
+      width: 15%; } }
 
 .btn--info {
   background-color: #693D80; }
+  @media (min-width: 768px) {
+    .btn--info {
+      width: 15%; } }
 
 .form {
   display: flex;

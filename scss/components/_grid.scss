@@ -16,7 +16,6 @@
  @include flex_me(column);
   @media (min-width: $break-md){
     @include flex_me($dir:row, $just:space-around);
-
   }
 }
 
