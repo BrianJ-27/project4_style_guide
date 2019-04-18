@@ -342,33 +342,25 @@ template {
 
 .btn--default {
   background-color: #69F6FF; }
-  @media (min-width: 768px) {
-    .btn--default {
-      width: 15%; } }
 
 .btn--success {
   background-color: #09E827; }
-  @media (min-width: 768px) {
-    .btn--success {
-      width: 15%; } }
 
 .btn--error {
   background-color: #D13219; }
-  @media (min-width: 768px) {
-    .btn--error {
-      width: 15%; } }
 
 .btn--warning {
   background-color: #FF760D; }
-  @media (min-width: 768px) {
-    .btn--warning {
-      width: 15%; } }
 
 .btn--info {
   background-color: #693D80; }
-  @media (min-width: 768px) {
-    .btn--info {
-      width: 15%; } }
+
+@media (min-width: 768px) {
+  .theme__colors {
+    width: 15%; } }
+
+button[type="submit"] {
+  width: 100%; }
 
 .form {
   display: flex;
@@ -495,7 +487,7 @@ template {
 
 @media (min-width: 768px) {
   [class^=grid__col] + [class^=grid__col] {
-    margin-left: 10px; } }
+    margin-left: 35px; } }
 
 .grid__col--3.theme__colors {
   background-color: #E893FF; }
