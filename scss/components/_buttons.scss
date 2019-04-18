@@ -5,39 +5,26 @@
 .btn--default{
   @extend %btn;
   background-color: $color-link-button-default;
-  @media (min-width: $break-md){
-  }
 }
 .btn--success{
   @extend %btn;
   background-color: $button-success;
-  @media (min-width: $break-md){
-  }
 }
 .btn--error{
   @extend %btn;
   background-color: $button-error;
-  @media (min-width: $break-md){
-  }
 }
 .btn--warning{
   @extend %btn;
   background-color: $button-warning;
-  @media (min-width: $break-md){
-  }
 }
 .btn--info{
   @extend %btn;
   background-color: $button-info;
-  @media (min-width: $break-md){
-  }
 }
 
 .theme__colors{
   @extend %padding;
-  @media (min-width: $break-md){
-    width: 15%;
-  }
 }
 
 button[type="submit"]{
