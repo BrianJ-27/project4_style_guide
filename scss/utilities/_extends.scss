@@ -3,16 +3,17 @@
 // **************************************
   %padding {
     padding: .5em;
+    border-radius: 5px;
   }
 
   %btn{
-    width: 15%;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
+    margin-bottom: 1em;
   }
 
-  %img {
+  %centered {
     display: block;
     margin: 0 auto;
   }

@@ -3,18 +3,18 @@
 // **************************************
 
 .img--logo{
-  @extend %img;
+  @extend %centered;
   padding-bottom: 2.5em;
 }
 
 .img--frame{
-  @extend %img;
-  border: 7px inset #fff;
+  @extend %centered;
+  border: 7px solid #fff;
   margin-bottom: 2.5em;
 
 }
 
 .img--avatar{
-  @extend %img;
+  @extend %centered;
   padding-bottom: 1em;
 }
