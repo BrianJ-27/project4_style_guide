@@ -1,11 +1,13 @@
 // **************************************
 // EXTENDS
 // **************************************
-  %btn {
+  %padding {
     padding: .5em;
   }
 
-  %btn-properties{
+  %btn{
+    width: 15%;
+    text-align: center;
     text-transform: uppercase;
     color: #fff;
   }

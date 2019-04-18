@@ -16,7 +16,7 @@
  @include flex_me(column);
   @media (min-width: $break-md){
     @include flex_me($dir:row, $just:space-around);
- 
+
   }
 }
 
@@ -90,36 +90,36 @@
 
 //Grid Theme Styles
 .grid__col--3.theme__colors{
-  @extend %btn;
+  @extend %padding;
   background-color: $bg-grid-col-3;
 }
 
 .grid__col--4.theme__colors{
-  @extend %btn;
+  @extend %padding;
   background-color: $bg-grid-col-4;
 }
 
 .grid__col--5.theme__colors{
-  @extend %btn;
+  @extend %padding;
   background-color: $bg-grid-col-5;
 }
 
 .grid__col--6.theme__colors{
-  @extend %btn;
+  @extend %padding;
   background-color: $bg-grid-col-6;
 }
 
 .grid__col--7.theme__colors{
-  @extend %btn;
+  @extend %padding;
   background-color: $bg-grid-col-7;
 }
 
 .grid__col--8.theme__colors{
-  @extend %btn;
+  @extend %padding;
   background-color: $bg-grid-col-8;
 }
 
 .grid__col--12.theme__colors{
-  @extend %btn;
+  @extend %padding;
   background-color: $bg-grid-col-12;
 }

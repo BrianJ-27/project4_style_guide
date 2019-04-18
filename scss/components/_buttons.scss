@@ -4,28 +4,28 @@
 
 .btn--default{
   @extend %btn;
-  @extend %btn-properties;
+  @extend %padding;
   background-color: $color-link-button-default;
 }
 .btn--success{
   @extend %btn;
-  @extend %btn-properties;
+  @extend %padding;
   background-color: $button-success;
 }
 .btn--error{
   @extend %btn;
-  @extend %btn-properties;
+  @extend %padding;
   background-color: $button-error;
 
 }
 .btn--warning{
   @extend %btn;
-  @extend %btn-properties;
+  @extend %padding;
   background-color: $button-warning;
 }
 .btn--info{
   @extend %btn;
-  @extend %btn-properties;
+  @extend %padding;
   background-color: $button-info;
 }
 
