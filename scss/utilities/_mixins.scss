@@ -20,3 +20,15 @@
    }
 
 // Media Query
+@mixin mq($break){
+  @if $break == 'md'{
+    @media (min-width: $break-md){
+      @content;
+    }
+  }
+  @else if $break == 'lg' {
+    @media (min-width: $break-lg){
+      @content;
+    }
+  }
+}

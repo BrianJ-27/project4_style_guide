@@ -22,6 +22,7 @@ div,
 h1,
 h4,
 nav,
+img,
 ul,
 li,
 p,
@@ -367,14 +368,11 @@ button[type="submit"] {
   flex-direction: column; }
 
 .form__label--hidden {
-  margin-bottom: .5em;
-  margin-left: 1em;
+  margin-bottom: 1.5em;
   border-bottom: 4px solid #00DBB6; }
 
 .form__input {
-  margin-bottom: 1em;
-  background-color: #f2f2f5;
-  border-radius: 5px; }
+  display: none; }
 
 .container {
   max-width: 75em;
@@ -514,8 +512,12 @@ button[type="submit"] {
   padding-bottom: 2.5em; }
 
 .img--frame {
+  max-width: 20em;
   border: 7px solid #fff;
   margin-bottom: 2.5em; }
+  @media (min-width: 768px) {
+    .img--frame {
+      max-width: 25.625em; } }
 
 .img--avatar {
   padding-bottom: 1em; }

@@ -2,6 +2,7 @@
 //IMAGES
 // **************************************
 
+
 .img--logo{
   @extend %centered;
   padding-bottom: 2.5em;
@@ -9,9 +10,12 @@
 
 .img--frame{
   @extend %centered;
+  max-width: px-to-ems(320px);
   border: 7px solid #fff;
   margin-bottom: 2.5em;
-
+  @media (min-width: $break-md){
+    max-width: px-to-ems(410px);
+  }
 }
 
 .img--avatar{
