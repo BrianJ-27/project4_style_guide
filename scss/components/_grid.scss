@@ -12,6 +12,22 @@
   padding: 1em;
 }
 
+.grid__col--12{
+ @include flex_me(column);
+  @media (min-width: $break-md){
+    @include flex_me($dir:row, $just:space-around);
+ 
+  }
+}
+
+.centered{
+
+}
+
+.card{
+  margin-bottom: 7em;
+}
+
 // grid base layout styles
 .grid {
 
@@ -72,7 +88,7 @@
   }
 }
 
-//Grid Styles
+//Grid Theme Styles
 .grid__col--3.theme__colors{
   @extend %btn;
   background-color: $bg-grid-col-3;
@@ -91,7 +107,6 @@
 .grid__col--6.theme__colors{
   @extend %btn;
   background-color: $bg-grid-col-6;
-
 }
 
 .grid__col--7.theme__colors{
@@ -107,18 +122,4 @@
 .grid__col--12.theme__colors{
   @extend %btn;
   background-color: $bg-grid-col-12;
-}
-
-.grid__col--12{
- @include flex_me(column);
-}
-
-
-
-.centered{
-
-}
-
-.card{
-  margin-bottom: 7em;
 }

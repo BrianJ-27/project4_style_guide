@@ -33,6 +33,10 @@
     $font-color: #8c8c8c;
 
 // Breakpoints
+
+    $break-md: 768px;
+    $break-lg: 992px;
+
     $breakpoints: (
     'md': 768px,
     'lg': 992px,
