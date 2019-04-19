@@ -1,271 +1,99 @@
-/* Provived Padding and curved borders for     buttons/grid items*/
-@import url(normalize.css);
-.theme__colors {
-  padding: .5em;
-  border-radius: 5px; }
+/*
+Error: Undefined variable: "$base-font-size".
+        on line 4 of scss/utilities/_variables.scss
+        from line 4 of scss/utilities/_index.scss
+        from line 8 of scss/styles.scss
 
-.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  margin-bottom: 1em; }
+1: // **************************************
+2: // index.scss
+3: // Main Sass file used to import partials
+4: // **************************************
+5: 
+6: 
+7: // NOTE: import utilities and base partials here:
+8: @import 'utilities/index';
+9: @import 'base/index';
 
-a[href] {
-  text-decoration: none;
-  color: #000; }
-
-.nav .nav__item {
-  list-style-type: none;
-  text-align: center;
-  border-radius: 3px;
-  padding: .5em; }
-
-.img--logo, .img--frame, .img--avatar {
-  display: block;
-  margin: 0 auto; }
-
-/* width for coloered buttons for 768px screen sizes */
-/*------GLOBAL RESET/BASE STYLES--------*/
-* {
-  box-sizing: border-box; }
-
-h1,
-h4,
-p,
-a[href] {
-  color: #8c8c8c;
-  line-height: 1.5em; }
-
-ul {
-  margin-bottom: 5em;
-  margin: 0 0; }
-
-@media (min-width: 768px) {
-  .btn, .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
-    width: 15%; } }
-
-.btn--default {
-  background-color: #69F6FF; }
-
-.btn--success {
-  background-color: #09E827; }
-
-.btn--error {
-  background-color: #D13219; }
-
-.btn--warning {
-  background-color: #FF760D; }
-
-.btn--info {
-  background-color: #693D80; }
-
-button[type="submit"] {
-  width: 100%; }
-
-.form {
-  display: flex;
-  flex-direction: column; }
-
-.form__label--hidden {
-  margin-bottom: 1.5em;
-  border-bottom: 4px solid #00DBB6; }
-
-.form__input {
-  display: none; }
-
-.container {
-  max-width: 75em;
-  margin: 0 auto;
-  padding: 1em; }
-
-.grid__col--12 {
-  display: flex;
-  flex-direction: column; }
-  @media (min-width: 768px) {
-    .grid__col--12 {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around; } }
-
-@media (min-width: 768px) {
-  .centered {
-    margin: 0 auto; } }
-
-.card {
-  margin-bottom: 3em; }
-
-.grid__row {
-  padding: 1em 10px;
-  display: flex;
-  flex-direction: column; }
-  @media (min-width: 768px) {
-    .grid__row {
-      flex-direction: row; } }
-.grid__col--1 {
-  margin-top: 10px;
-  flex-basis: 100%; }
-  @media (min-width: 768px) {
-    .grid__col--1 {
-      margin-top: 0;
-      flex-basis: 8.3333333333%; } }
-.grid__col--2 {
-  margin-top: 10px;
-  flex-basis: 100%; }
-  @media (min-width: 768px) {
-    .grid__col--2 {
-      margin-top: 0;
-      flex-basis: 16.6666666667%; } }
-.grid__col--3 {
-  margin-top: 10px;
-  flex-basis: 100%; }
-  @media (min-width: 768px) {
-    .grid__col--3 {
-      margin-top: 0;
-      flex-basis: 25%; } }
-.grid__col--4 {
-  margin-top: 10px;
-  flex-basis: 100%; }
-  @media (min-width: 768px) {
-    .grid__col--4 {
-      margin-top: 0;
-      flex-basis: 33.3333333333%; } }
-.grid__col--5 {
-  margin-top: 10px;
-  flex-basis: 100%; }
-  @media (min-width: 768px) {
-    .grid__col--5 {
-      margin-top: 0;
-      flex-basis: 41.6666666667%; } }
-.grid__col--6 {
-  margin-top: 10px;
-  flex-basis: 100%; }
-  @media (min-width: 768px) {
-    .grid__col--6 {
-      margin-top: 0;
-      flex-basis: 50%; } }
-.grid__col--7 {
-  margin-top: 10px;
-  flex-basis: 100%; }
-  @media (min-width: 768px) {
-    .grid__col--7 {
-      margin-top: 0;
-      flex-basis: 58.3333333333%; } }
-.grid__col--8 {
-  margin-top: 10px;
-  flex-basis: 100%; }
-  @media (min-width: 768px) {
-    .grid__col--8 {
-      margin-top: 0;
-      flex-basis: 66.6666666667%; } }
-.grid__col--9 {
-  margin-top: 10px;
-  flex-basis: 100%; }
-  @media (min-width: 768px) {
-    .grid__col--9 {
-      margin-top: 0;
-      flex-basis: 75%; } }
-.grid__col--10 {
-  margin-top: 10px;
-  flex-basis: 100%; }
-  @media (min-width: 768px) {
-    .grid__col--10 {
-      margin-top: 0;
-      flex-basis: 83.3333333333%; } }
-.grid__col--11 {
-  margin-top: 10px;
-  flex-basis: 100%; }
-  @media (min-width: 768px) {
-    .grid__col--11 {
-      margin-top: 0;
-      flex-basis: 91.6666666667%; } }
-.grid__col--12 {
-  margin-top: 10px;
-  flex-basis: 100%; }
-  @media (min-width: 768px) {
-    .grid__col--12 {
-      margin-top: 0;
-      flex-basis: 100%; } }
-
-@media (min-width: 768px) {
-  [class^=grid__col] + [class^=grid__col] {
-    margin-left: 35px; } }
-
-.grid__col--3.theme__colors {
-  background-color: #E893FF; }
-
-.grid__col--4.theme__colors {
-  background-color: #7BEDFF; }
-
-.grid__col--5.theme__colors {
-  background-color: #07D874; }
-
-.grid__col--6.theme__colors {
-  background-color: #3887B2; }
-
-.grid__col--7.theme__colors {
-  background-color: #DB7D6A; }
-
-.grid__col--8.theme__colors {
-  background-color: #FF9969; }
-
-.grid__col--12.theme__colors {
-  background-color: #5CFFCB; }
-
-.img--logo {
-  padding-bottom: 2.5em; }
-
-.img--frame {
-  max-width: 20em;
-  border: 7px solid #fff;
-  outline: .8px solid #000;
-  margin-bottom: 2.5em; }
-  @media (min-width: 768px) {
-    .img--frame {
-      max-width: 25.625em; } }
-
-.img--avatar {
-  padding-bottom: 1em; }
-
-.nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  @media (min-width: 768px) {
-    .nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end; } }
-  @media (min-width: 768px) {
-    .nav .nav__item {
-      margin: 1.5em 2em 0 0; } }
-  .nav .nav__item .nav__item:hover {
-    background-color: #00DBB6; }
-  .nav .nav__itema:hover {
-    color: #fff; }
-
-.container {
-  font-family: "Verdana", sans-serif;
-  line-height: 1.5em;
-  font-size: 1em; }
-
-.link {
-  text-decoration: none;
-  color: #69F6FF;
-  font-size: 1.1em; }
-
-.blockquote {
-  border-left: 4px solid #00DBB6;
-  padding-left: 1em;
-  font-size: 1.4em;
-  font-style: italic; }
-
-.headline--primary {
-  margin-bottom: 1em;
-  color: #00DBB6;
-  line-height: 1.1em; }
-
-.headline--secondary {
-  margin: 4em 0;
-  color: #8c8c8c; }
-
-/*# sourceMappingURL=styles.css.map */
+Backtrace:
+scss/utilities/_variables.scss:4
+scss/utilities/_index.scss:4
+scss/styles.scss:8
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:72:in `block in perform_arguments'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:65:in `zip'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:65:in `perform_arguments'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:257:in `perform_sass_fn'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:140:in `block in _perform'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:108:in `block in with_function'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:108:in `with_function'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:139:in `_perform'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:478:in `visit_variable'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `map'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `map'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$base-font-size\".\A         on line 4 of scss/utilities/_variables.scss\A         from line 4 of scss/utilities/_index.scss\A         from line 8 of scss/styles.scss\A \A 1: // **************************************\A 2: // index.scss\A 3: // Main Sass file used to import partials\A 4: // **************************************\A 5: \A 6: \A 7: // NOTE: import utilities and base partials here:\A 8: @import 'utilities/index';\A 9: @import 'base/index';"; }

@@ -4,7 +4,6 @@
 
 //Base Colors
     $white: #fff;
-    $black: #000;
     $main-site-color: #00DBB6;
 
 //Button Colors
@@ -29,10 +28,10 @@
 //Font Stacks
     $font-primary: 'Verdana', sans-serif ;
     $font-secondary: 'Helvetica' sans-serif;
-    $base-font-size: 16px;
+    $base-font-size: px-to-ems(16px);
     $font-color: #8c8c8c;
-    
-// media query breakpoint map
+
+// Media Query Breakpoint Map
     $breakpoints: (
     'md': 768px,
     'lg': 992px,
