@@ -6,9 +6,10 @@
 
 h1,
 h4,
-p{
+p,
+a{
   color: $font-color;
-  line-height: 1.5em;
+
 }
 
 ul{
@@ -17,6 +18,5 @@ ul{
 }
 
 a[href]{
-  @extend p;
   @extend %link-love;
 }

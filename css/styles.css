@@ -10,8 +10,7 @@
   margin-bottom: 1em; }
 
 a[href] {
-  text-decoration: none;
-  color: #000; }
+  text-decoration: none; }
 
 .nav .nav__item {
   list-style-type: none;
@@ -336,9 +335,8 @@ template {
 h1,
 h4,
 p,
-a[href] {
-  color: #8c8c8c;
-  line-height: 1.5em; }
+a {
+  color: #8c8c8c; }
 
 ul {
   margin-bottom: 5em;
