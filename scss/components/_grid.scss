@@ -14,9 +14,9 @@
 
 .grid__col--12{
  @include flex_me(column);
-  @media (min-width: $break-md){
-    @include flex_me($dir:row, $just:space-around);
-  }
+ @include mq('md'){
+     @include flex_me($dir:row, $just:space-around);
+ }
 }
 
 .centered{
@@ -33,11 +33,10 @@
   // .grid__row
   &__row {
     padding: 1em 10px;
-    display: flex;
-    flex-direction: column;
+    @include flex_me(column);
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include mq('md'){
       flex-direction: row;
     }
   }
@@ -60,13 +59,13 @@
         flex-basis: 100%;
 
         // NOTE: replace with media query mixin if aiming for exceeds
-        @media (min-width: 768px) {
+        @include mq('md'){
 
           // base stlyes applied to all grid columns
           margin-top: 0;
 
           // make column width a percentage of the column number / total columns
-          flex-basis: #{$i / 12 * 100 + "%"} ;
+          flex-basis: #{$i / 12 * 100 + "%"};
         }
       }
     }
@@ -79,7 +78,7 @@
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include mq('md'){
 
       // add grid gutter
       margin-left: 35px;

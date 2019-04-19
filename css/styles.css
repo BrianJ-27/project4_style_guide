@@ -511,6 +511,9 @@ button[type="submit"] {
   max-width: 20em;
   border: 7px solid #fff;
   margin-bottom: 2.5em; }
+  @media (min-width: 768px) {
+    .img--frame {
+      max-width: 25.625em; } }
 
 .img--avatar {
   padding-bottom: 1em; }
@@ -520,12 +523,20 @@ button[type="submit"] {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 5em; }
+  @media (min-width: 768px) {
+    .nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end; } }
 
 .nav__item {
   list-style-type: none;
   text-align: center;
   border-radius: 3px;
   padding: .5em; }
+  @media (min-width: 768px) {
+    .nav__item {
+      margin: 1.5em 2em 0 0; } }
 
 .nav__item:hover {
   background-color: #00DBB6; }
@@ -533,6 +544,9 @@ button[type="submit"] {
 .nav__item a {
   text-decoration: none;
   color: #000; }
+  @media (min-width: 768px) {
+    .nav__item a {
+      color: #8c8c8c; } }
 
 .nav__item a:hover {
   color: #fff; }

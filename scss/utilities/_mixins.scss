@@ -21,14 +21,17 @@
 
 // Media Query
 @mixin mq($break){
-  @if $break == 'md'{
-    @media (min-width: $break-md){
+  $value: map-get($breakpoints, $break);
+  $md: map-get($breakpoints, 'md');
+
+  @if $value > $md {
+    @media (min-width: $value){
       @content;
     }
   }
-  @else if $break == 'lg' {
-    @media (min-width: $break-lg){
+  @else {
+    @media (min-width: $value){
       @content;
-    }
+   }
   }
 }

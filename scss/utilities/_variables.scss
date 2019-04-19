@@ -31,12 +31,8 @@
     $font-secondary: 'Helvetica' sans-serif;
     $base-font-size: 16px;
     $font-color: #8c8c8c;
-
-// Breakpoints
-
-    $break-md: 768px;
-    $break-lg: 992px;
-
+    
+// media query breakpoint map
     $breakpoints: (
     'md': 768px,
     'lg': 992px,
