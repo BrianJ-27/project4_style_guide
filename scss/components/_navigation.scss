@@ -3,6 +3,7 @@
 // **************************************
 
 .nav{
+  padding: 0 0;
   @include flex_me($dir:column, $just:center);
   @include mq('md'){
     @include flex_me($dir:row,

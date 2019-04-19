@@ -227,6 +227,7 @@ button[type="submit"] {
   padding-bottom: 1em; }
 
 .nav {
+  padding: 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center; }
