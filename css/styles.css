@@ -238,9 +238,10 @@ button[type="submit"] {
   @media (min-width: 768px) {
     .nav .nav__item {
       margin: 1.5em 2em 0 0; } }
-  .nav .nav__item .nav__item:hover {
-    background-color: #00DBB6; }
-  .nav .nav__itema:hover {
+
+.nav__item:hover {
+  background-color: #00DBB6; }
+  .nav__item:hover a:hover {
     color: #fff; }
 
 .container {

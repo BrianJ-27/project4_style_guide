@@ -13,11 +13,12 @@
     @include mq('md'){
       margin: 1.5em 2em 0 0;
     }
-    .nav__item:hover{
-      background-color: $main-site-color;
-    }
-    &a:hover{
-      color: #fff;
-    }
+  }
+}
+
+.nav__item:hover{
+  background-color: $main-site-color;
+  & a:hover{
+    color: #fff;
   }
 }
