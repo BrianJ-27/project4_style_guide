@@ -2,6 +2,10 @@
 // MIXINS
 // **************************************
 
+@mixin btn_width{
+  width: 15%;
+}
+
 //centering text on page
  @mixin centered {
    text-align: center;

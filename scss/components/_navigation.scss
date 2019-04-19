@@ -3,8 +3,7 @@
 // **************************************
 
 .nav{
-  @include flex_me(column);
-  justify-content: center;
+  @include flex_me($dir:column, $just:center);
   margin-bottom: 5em;
   @include mq('md'){
     @include flex_me($dir:row,

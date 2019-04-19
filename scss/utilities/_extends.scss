@@ -1,7 +1,8 @@
 // **************************************
 // EXTENDS
 // **************************************
-  %padding {
+
+%padding {
     padding: .5em;
     border-radius: 5px;
   }
@@ -16,8 +17,4 @@
   %centered {
     display: block;
     margin: 0 auto;
-  }
-
-  %btn_width{
-    width: 15%;
   }

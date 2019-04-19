@@ -1,25 +1,35 @@
 // **************************************
 //BUTTONS
 // **************************************
+.btn{
+  @include mq('md'){
+    @include btn_width;
+  }
+}
 
 .btn--default{
   @extend %btn;
+  @extend .btn;
   background-color: $color-link-button-default;
 }
 .btn--success{
   @extend %btn;
+  @extend .btn;
   background-color: $button-success;
 }
 .btn--error{
   @extend %btn;
+  @extend .btn;
   background-color: $button-error;
 }
 .btn--warning{
   @extend %btn;
+  @extend .btn;
   background-color: $button-warning;
 }
 .btn--info{
   @extend %btn;
+  @extend .btn;
   background-color: $button-info;
 }
 
