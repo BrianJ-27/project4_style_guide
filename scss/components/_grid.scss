@@ -89,30 +89,39 @@
 }
 
 //Grid Theme Styles
-.grid__col--3.theme__colors{
-  background-color: $bg-grid-col-3;
-}
+@include mq('md'){
+  .grid__col--3.theme__colors{
+    background-color: $bg-grid-col-3;
+    @include centered;
+  }
 
-.grid__col--4.theme__colors{
-  background-color: $bg-grid-col-4;
-}
+  .grid__col--4.theme__colors{
+    background-color: $bg-grid-col-4;
+    @include centered;
+  }
 
-.grid__col--5.theme__colors{
-  background-color: $bg-grid-col-5;
-}
+  .grid__col--5.theme__colors{
+    background-color: $bg-grid-col-5;
+    @include centered;
+  }
 
-.grid__col--6.theme__colors{
-  background-color: $bg-grid-col-6;
-}
+  .grid__col--6.theme__colors{
+    background-color: $bg-grid-col-6;
+    @include centered;
+  }
 
-.grid__col--7.theme__colors{
-  background-color: $bg-grid-col-7;
-}
+  .grid__col--7.theme__colors{
+    background-color: $bg-grid-col-7;
+    @include centered;
+  }
 
-.grid__col--8.theme__colors{
-  background-color: $bg-grid-col-8;
-}
+  .grid__col--8.theme__colors{
+    background-color: $bg-grid-col-8;
+    @include centered;
+  }
 
-.grid__col--12.theme__colors{
-  background-color: $bg-grid-col-12;
+  .grid__col--12.theme__colors{
+    background-color: $bg-grid-col-12;
+    @include centered;
+  }
 }
