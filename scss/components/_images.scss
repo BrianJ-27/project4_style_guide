@@ -12,6 +12,7 @@
   @extend %centered;
   max-width: px-to-ems(320px);
   border: 7px solid #fff;
+  outline: .8px solid #000;
   margin-bottom: 2.5em;
   @include mq('md'){
     max-width: px-to-ems(410px);

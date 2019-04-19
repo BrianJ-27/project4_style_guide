@@ -4,35 +4,20 @@
 
 .nav{
   @include flex_me($dir:column, $just:center);
-  margin-bottom: 5em;
   @include mq('md'){
     @include flex_me($dir:row,
                      $just: flex-end);
   }
-}
-
-.nav__item {
-  list-style-type: none;
-  text-align: center;
-  border-radius: 3px;
-  padding: .5em;
-  @include mq('md'){
-    margin: 1.5em 2em 0 0;
+  .nav__item {
+    @extend %nav-properties;
+    @include mq('md'){
+      margin: 1.5em 2em 0 0;
+    }
+    .nav__item:hover{
+      background-color: $main-site-color;
+    }
+    &a:hover{
+      color: #fff;
+    }
   }
-}
-
-.nav__item:hover{
-  background-color: $main-site-color;
-}
-
-.nav__item a{
-  text-decoration: none;
-  color: #000;
-  @include mq('md'){
-      color: $font-color;
-  }
-}
-
-.nav__item a:hover{
-  color: #fff;
 }

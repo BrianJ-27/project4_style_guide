@@ -1,0 +1,24 @@
+/*------GLOBAL RESET/BASE STYLES--------*/
+//normalize stylesheet
+@import 'normalize.css';
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h4,
+p{
+  color: $font-color;
+  line-height: 1.5em;
+}
+
+ul{
+  margin-bottom: 5em;
+  margin: 0 0;
+}
+
+a[href]{
+  @extend p;
+  @extend %link-love;
+}
