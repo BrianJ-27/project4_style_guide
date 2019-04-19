@@ -20,6 +20,8 @@
   padding-left: 1em;
   font-size: $base-font-size;
   font-style: italic;
+  font-weight: 700;
+  color: $font-color-secondary;
 }
 
 .headline--primary{
@@ -29,6 +31,6 @@
 }
 
 .headline--secondary{
-  margin: 4em 0;
+  margin: 1em 0;
   color: $font-color;
 }
