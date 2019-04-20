@@ -1,37 +1,6 @@
 // **************************************
 //BUTTONS
 // **************************************
-.btn{
-  @include mq('md'){
-    @include btn_width;
-  }
-}
-
-.btn--default{
-  @extend %btn;
-  @extend .btn;
-  background-color: $color-link-button-default;
-}
-.btn--success{
-  @extend %btn;
-  @extend .btn;
-  background-color: $button-success;
-}
-.btn--error{
-  @extend %btn;
-  @extend .btn;
-  background-color: $button-error;
-}
-.btn--warning{
-  @extend %btn;
-  @extend .btn;
-  background-color: $button-warning;
-}
-.btn--info{
-  @extend %btn;
-  @extend .btn;
-  background-color: $button-info;
-}
 
 .theme__colors{
   @extend %padding;
@@ -39,4 +8,44 @@
 
 button[type="submit"]{
   width: 100%;
+}
+
+.btn--default{
+  @extend %btn;
+  background-color: $color-link-button-default;
+  @include mq('md'){
+    @include btn_width;
+  }
+}
+
+.btn--success{
+  @extend %btn;
+  background-color: $button-success;
+  @include mq('md'){
+    @include btn_width;
+  }
+}
+
+.btn--error{
+  @extend %btn;
+  background-color: $button-error;
+  @include mq('md'){
+    @include btn_width;
+  }
+}
+
+.btn--warning{
+  @extend %btn;
+  background-color: $button-warning;
+  @include mq('md'){
+    @include btn_width;
+  }
+}
+
+.btn--info{
+  @extend %btn;
+  background-color: $button-info;
+  @include mq('md'){
+    @include btn_width;
+  }
 }

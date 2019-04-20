@@ -342,27 +342,38 @@ ul {
   margin-bottom: 5em;
   margin: 0 0; }
 
-@media (min-width: 768px) {
-  .btn, .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
-    width: 15%; } }
+button[type="submit"] {
+  width: 100%; }
 
 .btn--default {
   background-color: #69F6FF; }
+  @media (min-width: 768px) {
+    .btn--default {
+      width: 15%; } }
 
 .btn--success {
   background-color: #09E827; }
+  @media (min-width: 768px) {
+    .btn--success {
+      width: 15%; } }
 
 .btn--error {
   background-color: #D13219; }
+  @media (min-width: 768px) {
+    .btn--error {
+      width: 15%; } }
 
 .btn--warning {
   background-color: #FF760D; }
+  @media (min-width: 768px) {
+    .btn--warning {
+      width: 15%; } }
 
 .btn--info {
   background-color: #693D80; }
-
-button[type="submit"] {
-  width: 100%; }
+  @media (min-width: 768px) {
+    .btn--info {
+      width: 15%; } }
 
 .form {
   display: flex;
