@@ -10,7 +10,23 @@ h4,
 p,
 a{
   color: $font-color;
+}
 
+button:hover{
+  color: #000;
+  transition: color box-shadow .25s;
+   box-shadow:         inset 0 0 10px #000000;
+  cursor: pointer;
+}
+
+p,
+a{
+  font-size: 1.8em;
+}
+
+img:hover{
+  transform: scale(1.05);
+  transition: transform .1s;
 }
 
 ul{

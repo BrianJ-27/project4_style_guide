@@ -4,15 +4,15 @@
 // **************************************
 
 .container {
-  font-family: $font-primary;
+  font-family: $font-google-primary;
   line-height: 1.5em;
-  font-size: 1em;
 }
 
 .link{
+  font-family: $font-secondary;
   text-decoration: none;
   color: $color-link-button-default;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 .blockquote{
