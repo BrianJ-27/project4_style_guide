@@ -8,8 +8,7 @@
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 1em;
-  font-size: 1.3em; }
+  margin-bottom: 1em; }
 
 a[href] {
   text-decoration: none; }
@@ -352,6 +351,9 @@ a {
   color: #8c8c8c;
   font-size: 1.6em;
   line-height: 1.5em; }
+
+.theme__colors {
+  font-size: 1.3em; }
 
 button:hover {
   color: #000;
