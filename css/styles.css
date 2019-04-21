@@ -22,8 +22,7 @@ a[href] {
 
 .img--logo, .img--frame, .img--avatar {
   display: block;
-  margin: 0 auto;
-  width: 100%; }
+  margin: 0 auto; }
 
 /* width for colored buttons for 768px screen sizes */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -335,18 +334,15 @@ template {
 * {
   box-sizing: border-box; }
 
-p,
-a {
-  color: #8c8c8c; }
-
-p,
-a {
-  font-size: 1.8em;
-  line-height: 1.5em; }
-
 ul {
   margin-bottom: 5em;
   margin: 0 0; }
+
+p,
+a {
+  color: #8c8c8c;
+  font-size: 1.6em;
+  line-height: 1.5em; }
 
 button:hover {
   color: #000;
@@ -607,8 +603,9 @@ img:hover {
 
 .blockquote {
   border-left: 4px solid #00DBB6;
-  padding-left: 1em;
-  font-size: 16px;
+  margin: 0 1em;
+  padding-left: .8em;
+  font-size: 1.45em;
   font-style: italic;
   font-weight: 700;
   color: #606060; }
@@ -620,6 +617,7 @@ img:hover {
 
 .headline--secondary {
   margin: 1em 0;
-  color: #8c8c8c; }
+  color: #8c8c8c;
+  font-size: 1.5em; }
 
 /*# sourceMappingURL=styles.css.map */

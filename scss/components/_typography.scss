@@ -17,8 +17,9 @@
 
 .blockquote{
   border-left: 4px solid $main-site-color;
-  padding-left: 1em;
-  font-size: $base-font-size;
+  margin: 0 1em;
+  padding-left: .8em;
+  font-size: 1.45em;
   font-style: italic;
   font-weight: 700;
   color: $font-color-secondary;
@@ -33,4 +34,5 @@
 .headline--secondary{
   margin: 1em 0;
   color: $font-color;
+  font-size: 1.5em;
 }

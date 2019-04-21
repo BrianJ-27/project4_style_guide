@@ -5,20 +5,16 @@
   box-sizing: border-box;
 }
 
-p,
-a{
-  color: $font-color;
-}
-
-p,
-a{
-  font-size: 1.8em;
-  line-height: 1.5em;
-}
-
 ul{
   margin-bottom: 5em;
   margin: 0 0;
+}
+
+p,
+a{
+  color: $font-color;
+  font-size: 1.6em;
+  line-height: 1.5em;
 }
 
 a[href]{
