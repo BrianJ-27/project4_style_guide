@@ -8,7 +8,8 @@
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  font-size: 1.3em; }
 
 a[href] {
   text-decoration: none; }
@@ -605,6 +606,7 @@ img:hover {
   border-left: 4px solid #00DBB6;
   margin: 0 1em;
   padding-left: .8em;
+  line-height: 1.3em;
   font-size: 1.45em;
   font-style: italic;
   font-weight: 700;
