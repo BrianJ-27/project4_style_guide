@@ -18,12 +18,7 @@
 .blockquote{
   border-left: 4px solid $main-site-color;
   margin: 0 1em;
-  padding-left: .8em;
-  line-height: 1.3em;
-  font-size: 1.45em;
-  font-style: italic;
-  font-weight: 700;
-  color: $font-color-secondary;
+  @extend %bq;
 }
 
 .headline--primary{
